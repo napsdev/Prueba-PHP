@@ -6,11 +6,15 @@
 Comentarios en PHP
 */
 
-//Variables y constantes en PHP
+//Siempre acabar con ; al final de cada linea de codigo PHP.
+echo "Hola mundo! \n Soy Jaime! <br>"; 
+// \n es un salto de linea.
+// Para navegador es <br> (HTML)
+
+//Variables y constantes en PHP//
 //Variables-> $nombreVariable (Guardan cosas, cómo una caja)
 $name = "Jaime";
 $numero_1 = 2;
-
 
 //Constantes-> define("NOMBRECONSTANTE", "Valor de la constante") (Guardan cosas, cómo una caja, pero no se pueden cambiar)
 //Como buena practica las constantes se escriben en mayusculas.
@@ -22,6 +26,8 @@ echo "<br>";
 echo NUMERO_1 + $numero_1;
 echo "<br>";
 
+//Operaciones matematicas
+echo "<br> Numerito: " . (2 + 2) * 2;
 
 /*
 Tipos de datos en PHP:
@@ -39,21 +45,29 @@ Null: No hay valor.
 Undefined: Hay una variable pero no tiene ningun valor.
 */
 
-// Aunque 25 sea un string el resultado será 30 dado que PHP en tiempo de ejecución lo convierte sin modificarlo.
+// Aunque 25 sea un string el resultado será 30 dado que PHP en tiempo de ejecución lo convierte sin modificar la variable.
 print_r("25"+5);
 echo "<br>";
 
+//Casting (forzar que un tipo de dato se convierta en otro)
+$numero_1 = "25";
+var_dump($numero_1);
+echo "<br>";
 
+//Casting de string a integer
+$numero_1 = (int)$numero_1;
+var_dump($numero_1);
+echo "<br>";
 
+echo $numero_1 + 5;
+echo "<br>";
 
-//Siempre acabar con ; al final de cada linea de codigo PHP.
-echo "Hola mundo! \n"; 
-// \n es un salto de linea.
-// Para navegador es <br>
+//Casting de dato a booleano (Cualquier valor que no sea 0, 0.0 o "" es true)
+$numero_1 = (bool)$numero_1;
+var_dump($numero_1);
+echo "<br>";
 
-echo "<br Hola mundo! <br> Soy Jaime!";
-
-//Concatenar en php es con .
+//Concatenar en php con .
 $name = "Napa";
 $lastname = "Sham";
 
@@ -62,8 +76,6 @@ echo "<br> Mas conocido como: <br>" . $name . "<br>" . $lastname;
 //Concatenar usando las variables dentro de las comillas dobles
 echo "<br> $name!!! <br> $lastname!!!";
 
-//Operaciones matematicas
-echo "<br> Numerito: " . (2 + 2) * 2;
 
 //Debugging básico*
 $listnameandage = [
@@ -80,7 +92,6 @@ echo "<br>";
 //Brinda información sobre la variable.
 print_r($listnameandage);
 echo "<br>";
-
 
 
 //Cierra el bloque de código PHP, si solo se usara codigo PHP no es necesario cerrarlo. 
