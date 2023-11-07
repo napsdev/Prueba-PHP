@@ -7,6 +7,6 @@
 </head>
 <body>
     <a href="sintaxis.php">Sintaxis</a>
-    <a href="operadores.php">Operadores lógicos</a>
+    <a href="operadores.php">Operadores</a>
 </body>
 </html>

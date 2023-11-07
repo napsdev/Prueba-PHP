@@ -33,21 +33,91 @@ echo "<br>";
 // >, Mayor que
 
 
-//Operadores de incremento y decremento
-$numero_1 = 5;
-$numero_2 = 10;
-$numero_3 = 15;
 
 
-$numero_1++;
-$numero_2--;
-$numero_3 += 5;
 
-echo $numero_1;
+
+//Operadores aritméticos
+// +, Suma
+// -, Resta
+// *, Multiplicación
+// /, División
+// %, Modulo (Residuo de la división)
+// **, Exponencial
+
+$age = 25;
+$age = $age + 5;
+echo $age;
 echo "<br>";
-echo $numero_2;
+
+$age = 25;
+$age = $age - 5;
+echo $age;
 echo "<br>";
-echo $numero_3;
+
+$age = 25;
+$age = $age * 5;
+echo $age;
+echo "<br>";
+
+$age = 25;
+$age = $age / 5;
+echo $age;
+echo "<br>";
+
+$age = 25;
+$age = $age % 5; //El residuo de la división
+echo $age;
+echo "<br>";
+
+$age = 25;
+$age = $age ** 5; //El residuo de la división
+echo $age;
+echo "<br>";
+
+
+//Operadores de asignación
+// +=, Suma en asignación
+// -=, Resta en asignación
+// *=, Multiplicación en asignación
+// /=, División en asignación
+// %=, Modulo en asignación
+
+$age = 25;
+$age += 5;
+echo $age;
+echo "<br>";
+
+$age = 25;
+$age -= 5;
+echo $age;
+echo "<br>";
+
+$age = 25;
+$age *= 5;
+echo $age;
+echo "<br>";
+
+$age = 25;
+$age /= 5;
+echo $age;
+echo "<br>";    
+
+$age = 25;
+$age %= 5; //El residuo de la división
+echo $age;
+echo "<br>";
+
+//Operadores de cadenas de caracteres
+// .=, Concatenación en asignación
+
+$name = "Napa";
+$name .= "Sham";
+echo $name;
+echo "<br>";
+
+
+
 
 
 ?>
